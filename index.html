@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fred Motta — Physicist & Software Engineer</title>
+<meta name="description" content="Fred Motta: Physics MS, full-stack developer, AI agent architect. Building governed self-improving systems at the intersection of physics and software.">
+<meta property="og:title" content="Fred Motta — Physicist & Software Engineer">
+<meta property="og:description" content="Physics MS, full-stack developer, AI agent architect. Building governed self-improving systems at the intersection of physics and software.">
+<meta property="og:type" content="website">
+
+<!-- Fonts: JetBrains Mono (display/code) + Satoshi (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#" class="header__logo" aria-label="Fred Motta home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+        <text x="16" y="22" text-anchor="middle" fill="currentColor" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">FM</text>
+      </svg>
+    </a>
+    <nav class="header__nav" aria-label="Primary navigation">
+      <a href="#about" class="header__link">About</a>
+      <a href="#projects" class="header__link">Projects</a>
+      <a href="#skills" class="header__link">Skills</a>
+      <a href="#research" class="header__link">Research</a>
+      <a href="#contact" class="header__link">Contact</a>
+    </nav>
+    <button class="header__theme" data-theme-toggle aria-label="Switch to light mode">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <canvas id="waveCanvas"></canvas>
+  </div>
+  <div class="hero__content">
+    <p class="hero__tag">Physicist &middot; Software Engineer &middot; AI Architect</p>
+    <h1 class="hero__title">Fred Motta</h1>
+    <p class="hero__equation" aria-label="Schrodinger equation">&#x0124;&Psi; = i&#x0127;&part;&Psi;&#x2215;&part;t</p>
+    <p class="hero__subtitle">From quantum mechanics to autonomous agents &mdash;<br>building systems that reason about their own improvement.</p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">View Projects</a>
+      <a href="https://github.com/fredm23579" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section__heading">About</h2>
+        <p>I hold a Master's degree in Physics with research experience in plasma simulation and materials characterization. After years in theoretical physics, I completed a full-stack web development program at UCLA Extension and pivoted to software engineering &mdash; bringing with me the mathematical rigor, systems thinking, and first-principles reasoning that physics demands.</p>
+        <p>My current focus is building <strong>Agent-Omega</strong>, a governed recursive self-improvement platform that explores how AI systems can safely modify themselves under constitutional constraints. It sits at the intersection of everything I care about: formal verification, distributed systems, and the philosophy of autonomous reasoning.</p>
+        <p>I'm based in Riverside, California. I believe the best engineering comes from understanding the physics underneath.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-card__number">MS</span>
+          <span class="stat-card__label">Physics</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">77</span>
+          <span class="stat-card__label">GitHub Repos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">5+</span>
+          <span class="stat-card__label">Languages</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">26</span>
+          <span class="stat-card__label">Original Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <h2 class="section__heading">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Agent Omega -->
+      <article class="project-card project-card--featured">
+        <div class="project-card__badge">Featured</div>
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span class="project-card__lang">Python &middot; FastAPI</span>
+        </div>
+        <h3 class="project-card__title">Agent-Omega</h3>
+        <p class="project-card__desc">A governed recursive self-improvement platform. Constitutional control-plane architecture with typed Reflective IR, kernel-governed mutations, provider-agnostic model adapters, and staged deployment discipline. Designed so an AI system can improve itself without collapsing governance, traceability, or reproducibility.</p>
+        <ul class="project-card__tags" role="list">
+          <li>Python 3.12</li>
+          <li>FastAPI</li>
+          <li>Pydantic</li>
+          <li>PostgreSQL</li>
+          <li>OpenAI</li>
+          <li>Anthropic</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/Agent-Omega" target="_blank" rel="noopener">Source Code &rarr;</a>
+        </div>
+      </article>
+
+      <!-- E-Commerce -->
+      <article class="project-card">
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="project-card__lang">JavaScript &middot; MERN</span>
+        </div>
+        <h3 class="project-card__title">E-Commerce Platform</h3>
+        <p class="project-card__desc">Full-stack React + Node.js/Express application with MongoDB, JWT authentication, GraphQL API, and integrated payment gateway. 265K+ bytes of production code.</p>
+        <ul class="project-card__tags" role="list">
+          <li>React</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>GraphQL</li>
+          <li>JWT</li>
+          <li>Stripe</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/e-commerce-site" target="_blank" rel="noopener">Source Code &rarr;</a>
+          <a href="https://e-commerce-site-us2y.onrender.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+        </div>
+      </article>
+
+      <!-- OpenAI Chat CLI -->
+      <article class="project-card">
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          <span class="project-card__lang">JavaScript &middot; Node.js</span>
+        </div>
+        <h3 class="project-card__title">OpenAI Chat CLI</h3>
+        <p class="project-card__desc">A command-line ChatGPT interface built with Node.js. Supports GPT-Turbo, conversation history, and works on any terminal. 75K bytes of JavaScript.</p>
+        <ul class="project-card__tags" role="list">
+          <li>Node.js</li>
+          <li>OpenAI API</li>
+          <li>CLI</li>
+          <li>ChatGPT</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/openai-chat-commandline" target="_blank" rel="noopener">Source Code &rarr;</a>
+        </div>
+      </article>
+
+      <!-- MERN Book Search -->
+      <article class="project-card">
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          <span class="project-card__lang">JavaScript &middot; MERN</span>
+        </div>
+        <h3 class="project-card__title">MERN Book Search</h3>
+        <p class="project-card__desc">Google Books API search engine built with the MERN stack. Refactored from REST to GraphQL with Apollo Server, featuring user authentication and book saving.</p>
+        <ul class="project-card__tags" role="list">
+          <li>React</li>
+          <li>Apollo</li>
+          <li>GraphQL</li>
+          <li>MongoDB</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/mern-book-search" target="_blank" rel="noopener">Source Code &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Pets Bytes -->
+      <article class="project-card">
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span class="project-card__lang">JavaScript &middot; HTML/CSS</span>
+        </div>
+        <h3 class="project-card__title">Pets-Bytes</h3>
+        <p class="project-card__desc">Location-based pet services finder using Google Maps JavaScript API. Helps pet owners find vets, groomers, and pet stores nearby. Most-starred personal project.</p>
+        <ul class="project-card__tags" role="list">
+          <li>Google Maps API</li>
+          <li>Geolocation</li>
+          <li>Responsive</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/pets-bytes" target="_blank" rel="noopener">Source Code &rarr;</a>
+          <a href="https://fredm23579.github.io/pets-bytes/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Tech Blog -->
+      <article class="project-card">
+        <div class="project-card__header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span class="project-card__lang">JavaScript &middot; MVC</span>
+        </div>
+        <h3 class="project-card__title">Tech Blog MVC</h3>
+        <p class="project-card__desc">Dynamic blog platform using Model-View-Controller architecture with Express.js, Handlebars templating, MySQL/Sequelize ORM, and session-based authentication.</p>
+        <ul class="project-card__tags" role="list">
+          <li>Express</li>
+          <li>Handlebars</li>
+          <li>MySQL</li>
+          <li>Sequelize</li>
+          <li>MVC</li>
+        </ul>
+        <div class="project-card__links">
+          <a href="https://github.com/fredm23579/tech-blog-mvc" target="_blank" rel="noopener">Source Code &rarr;</a>
+          <a href="https://tech-blog-mvc-express-8bd9dcae84c7.herokuapp.com/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SKILLS ═══════════ -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section__heading">Technical Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Languages</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Fortran</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Frontend</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Handlebars</span>
+          <span class="skill-tag">Progressive Web Apps</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Backend & Data</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Sequelize</span>
+          <span class="skill-tag">Mongoose</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">AI & Machine Learning</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">OpenAI API</span>
+          <span class="skill-tag">Anthropic API</span>
+          <span class="skill-tag">LLM Integration</span>
+          <span class="skill-tag">Agent Architecture</span>
+          <span class="skill-tag">Pydantic</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Tools & DevOps</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Heroku</span>
+          <span class="skill-tag">Render</span>
+          <span class="skill-tag">Jest</span>
+          <span class="skill-tag">Pytest</span>
+          <span class="skill-tag">Webpack</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group__title">Physics & Science</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">Quantum Mechanics</span>
+          <span class="skill-tag">Plasma Simulation</span>
+          <span class="skill-tag">PIC Codes</span>
+          <span class="skill-tag">Statistical Mechanics</span>
+          <span class="skill-tag">Materials Science</span>
+          <span class="skill-tag">PALS Spectroscopy</span>
+          <span class="skill-tag">Mathematical Modeling</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESEARCH INTERESTS ═══════════ -->
+<section class="section section--alt" id="research">
+  <div class="container">
+    <h2 class="section__heading">Research Interests</h2>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="research-card__icon">&#x03A8;</div>
+        <h3 class="research-card__title">Theoretical Physics</h3>
+        <p class="research-card__desc">Kaluza-Klein theory, quantum spacetime, cosmological models. Using mathematical frameworks to understand fundamental structure.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-card__icon">&#x2234;</div>
+        <h3 class="research-card__title">Plasma Simulation</h3>
+        <p class="research-card__desc">Particle-in-Cell methods, Vlasov-Fokker-Planck codes, beam-plasma interactions. Computational approaches to plasma physics.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-card__icon">&#x2699;</div>
+        <h3 class="research-card__title">AI Governance</h3>
+        <p class="research-card__desc">Constitutional AI constraints, recursive self-improvement under governance, formal verification of agent behavior, safety and alignment.</p>
+      </div>
+      <div class="research-card">
+        <div class="research-card__icon">&#x25C8;</div>
+        <h3 class="research-card__title">Materials Science</h3>
+        <p class="research-card__desc">Metal-organic frameworks, positron annihilation spectroscopy, materials characterization techniques.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="section" id="contact">
+  <div class="container container--narrow">
+    <h2 class="section__heading">Get in Touch</h2>
+    <p class="contact__text">I'm open to opportunities in software engineering, AI/ML engineering, and research positions that bridge physics and computation.</p>
+    <div class="contact__links">
+      <a href="mailto:motta@g.ucla.edu" class="btn btn--primary">motta@g.ucla.edu</a>
+      <a href="https://github.com/fredm23579" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Fred Motta. Built from scratch.</p>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__attr">
+      Created with Perplexity Computer
+    </a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
